@@ -1,8 +1,10 @@
 const express = require('express')
 let { notes } = require('./db/notes.js')
 const { generateId } = require('./db/utilities.js')
+const cors = require('cors')
 
 const app = express()
+app.use(cors())
 app.use(express.json())
 
 app.get('/', (_, res) => res.send(`<h1>Working!</h1>`))
