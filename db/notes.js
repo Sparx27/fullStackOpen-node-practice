@@ -12,7 +12,7 @@ let notes = [
   {
     id: 3,
     content: "Third note",
-    done: false
+    done: true
   },
   {
     id: 4,
